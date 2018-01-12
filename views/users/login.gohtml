@@ -3,25 +3,21 @@
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">Signup now</h3>
+                <h3 class="panel-title">Login now</h3>
             </div>
             <div class="panel-body">
-            {{template "signUpForm"}}
+            {{template "loginForm"}}
             </div>
         </div>
     </div>
 </div>
 {{end}}
 
-{{define "signUpForm"}}
-<form action="/signup" method="POST">
+{{define "loginForm"}}
+<form action="/login" method="POST">
     <div class="form-group">
         <label for="email">Email</label>
         <input type="email" class="form-control" id="email" name="email">
-    </div>
-    <div class="form-group">
-        <label for="name">Your full name</label>
-        <input type="text" class="form-control" id="name" name="name">
     </div>
     <div class="form-group">
         <label for="pass">Password</label>
