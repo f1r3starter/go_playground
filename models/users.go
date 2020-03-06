@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	ErrNotFound        = errors.New("Pidor not found")
+	ErrNotFound        = errors.New("User not found")
 	ErrInvalidId       = errors.New("Invalid id provided")
 	ErrInvalidPassword = errors.New("Invalid password provided")
 	userPwPepper       = "secret-pepper"
